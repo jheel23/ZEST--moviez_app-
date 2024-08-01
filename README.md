@@ -1,16 +1,6 @@
-# moviez_app
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**ZEST is a mobile platform for streaming movies and TV
+shows. Using The Movies Database (TMDB), users can
+explore upcoming releases, classics, and reviews. With
+Auth0 for authentication, ZEST promises a secure
+streaming experience, giving users access to premium
+content.**
