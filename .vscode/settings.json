@@ -8,6 +8,6 @@
     "*.dart": "$(capture).g.dart, $(capture).freezed.dart",
 },
     "editor.codeActionsOnSave": {
-        "source.fixAll": true
+        "source.fixAll": "explicit"
     }
 }

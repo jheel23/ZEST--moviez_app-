@@ -1,13 +1,12 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:tmdb_api/tmdb_api.dart';
 
 class TmdbMovies extends StateNotifier<List<dynamic>> {
   TmdbMovies() : super([]);
   List<dynamic> movie = [];
-  final String apikey = '3571895bb749fe1cf693ee4870688dcf';
-  final readaccessToken =
-      'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzNTcxODk1YmI3NDlmZTFjZjY5M2VlNDg3MDY4OGRjZiIsInN1YiI6IjY1MjNiZWE0MGNiMzM1MTZmNWM1YjY4YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.QNUjlq98Rw_-utZA_l1V8w8-VtyGbFoMAOlaedJtNrw';
-
+  final String apikey = dotenv.env['API_KEY'] ?? "";
+  final readaccessToken = dotenv.env['READ_ACCESS_TOKEN'] ?? "";
   void initState() {
     trendingMovies();
   }
